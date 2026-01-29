@@ -1,0 +1,12 @@
+<h2>Add Category</h2>
+<form method="post" action="/add-category">
+  <input name="name" placeholder="Category Name" required />
+  <button>Add</button>
+</form>
+
+<h3>Category List</h3>
+<ul>
+  <% categories.forEach(c => { %>
+    <li><%= c.CategoryId %> - <%= c.CategoryName %></li>
+  <% }) %>
+</ul>
